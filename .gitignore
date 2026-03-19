@@ -34,8 +34,9 @@ Desktop.ini
 # Generated output (users generate their own)
 output/
 
-# Generated icon (rebuilt on first run)
-oled_calibrator.ico
+# PyInstaller build artifacts
+build/
+dist/
 
 # Secrets / credentials
 *.env
