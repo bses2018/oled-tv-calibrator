@@ -43,7 +43,7 @@ class OLEDCalibratorApp(ctk.CTk):
         # Set window icon
         from src.gui.icon import get_icon_path
         icon = get_icon_path()
-        if icon:
+        if icon and sys.platform == "win32":  # .ico icons are Windows-only in Tk
             self.iconbitmap(icon)
 
         self._profiles_generated = []
